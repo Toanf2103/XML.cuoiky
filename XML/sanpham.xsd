@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="dct">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="sanpham" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:attribute name="masp" type="xs:integer" use="required" />
+                        <xs:attribute name="ten" use="required" />
+                        <xs:attribute name="loai" use="required" />
+                        <xs:attribute name="ngaysx" type="xs:date" use="required" />
+                        <xs:attribute name="handung" type="xs:date" use="required" />
+                        <xs:attribute name="soluong" type="xs:integer" use="required" />
+                        <xs:attribute name="gia" type="xs:integer" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
